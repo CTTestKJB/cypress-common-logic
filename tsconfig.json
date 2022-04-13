@@ -1,0 +1,34 @@
+
+/// <reference types="cypress" />
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "lib/esm",
+    "moduleResolution": "node",
+    "types": ["cypress"],
+    "baseUrl": "./",
+  },
+    // NEW: Options for file/directory watching
+    "watchOptions": {
+      // Use native file system events for files and directories
+      "watchFile": "useFsEvents",
+      "watchDirectory": "useFsEvents",
+      // Poll files for updates more frequently
+      // when they're updated a lot.
+      "fallbackPolling": "dynamicPriority",
+      // Don't coalesce watch notification
+      "synchronousWatchDirectory": true,
+      // Finally, two additional settings for reducing the amount of possible
+      // files to track  work from these directories
+      "excludeDirectories": ["**/node_modules", "_build"],
+      "excludeFiles": ["build/fileWhichChangesOften.ts"]
+    },
+  "compileOnSave": true,
+  "include": [
+    "cypress","tsconfig","cypress.json","node_modules/cypress",
+  ]
+}

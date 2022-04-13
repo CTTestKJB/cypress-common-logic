@@ -1,0 +1,7 @@
+{
+  "viewportWidth": 1200,
+  "viewportHeight": 800,
+  "supportFile": "cypress/support/index.ts",
+  "video": false,
+  "chromeWebSecurity": false
+}

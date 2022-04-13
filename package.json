@@ -1,5 +1,5 @@
 {
-  "name": "cypress-common-logic",
+  "name": "@cttestkjb/cypress-common-logic",
   "version": "1.0.0",
   "description": "Keyvans Cypress Interview Repo ",
   "main": "./lib/esm/cypress/support/index.js",

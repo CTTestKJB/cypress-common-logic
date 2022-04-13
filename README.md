@@ -12,4 +12,4 @@ When developing, we can install the module locally and make changes to it which 
 
 The entry point to this module is there a generated js file. To make changes and ensure the changes are reflected, we can run **npm run tsc:watch**.</p>
 
-using node v14.13.1</p>
+Using node **v14.13.1**</p>

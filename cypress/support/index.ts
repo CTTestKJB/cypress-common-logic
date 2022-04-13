@@ -24,7 +24,8 @@ import './commands'
 //   cy.log(baseUrl);
 //   Cypress.env('user.env.baseUrlValue', baseUrl);
 //   Cypress.env('user.env.username', Cypress.env('USERNAME'));
-//   Cypress.env('user.env.password', Cypress.env('PASSWORD'));
+//   Cypress.env('user.env.password', Cypress.env('PASSWORD'))
 // });
 
-export { visitPage, clickOnHref } from "./helper";
+export { visitPage, clickOnHref, goToSignupForm, validateEmailAndPassword, fullySignUp } from "./helper";
+

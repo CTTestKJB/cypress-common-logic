@@ -11,3 +11,5 @@ This module shuld be added as a dependancy to other projects, allowing the logic
 When developing, we can install the module locally and make changes to it which will be picked up and the typescript code will be transpiled to js.</p>
 
 The entry point to this module is there a generated js file. To make changes and ensure the changes are reflected, we can run **npm run tsc:watch**.</p>
+
+using node v14.13.1</p>

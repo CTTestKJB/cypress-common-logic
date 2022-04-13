@@ -1,1 +1,1 @@
-export { visitPage, clickOnHref } from "./lib/esm/helper";
+export { visitPage, clickOnHref, goToSignupForm, validateEmailAndPassword, fullySignUp } from "./lib/esm/helper";

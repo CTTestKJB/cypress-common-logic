@@ -16,7 +16,7 @@ declare global {
   namespace Cypress {
     interface Chainable<Subject = any>{
 
-      visitPage: () => void;
+      visitPage: (path?:string) => void;
     }
   }
 }
@@ -29,6 +29,6 @@ declare global {
 //   }
 // }
 
-Cypress.Commands.add('visitPage', () => {
-  goToBaseUrl();
+Cypress.Commands.add('visitPage', (path?:string) => {
+  goToBaseUrl(path);
 });

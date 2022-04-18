@@ -1,6 +1,6 @@
-export var goToBaseUrl = () => {
+export var goToBaseUrl = (path?:string) => {
   var env = Cypress.env('user.env.baseUrlValue');
-  cy.visit(env, {auth: {username: Cypress.env('user.env.username'), password: Cypress.env('user.env.password')}});
+  cy.visit(path==undefined? env: env + path, {auth: {username: Cypress.env('user.env.username'), password: Cypress.env('user.env.password')}});
 }
 
 export let getEnv = ()  => {

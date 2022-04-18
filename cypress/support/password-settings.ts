@@ -28,5 +28,5 @@ export const postCode = "se14 4js";
 export const dobDay = "1";
 export const dobMonth = "January";
 export const dobYear = "1993";
-export const fullDOB ="1993-01-01";
+export const fullDOB = "1993-01-01";
 export const country = "uk"
